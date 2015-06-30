@@ -1,0 +1,12 @@
+INSERT INTO dqed.effortRollouts SELECT * FROM qed.effortRollouts;
+INSERT INTO dqed.connections SELECT * FROM qed.connections;
+INSERT INTO dqed.defects SELECT * FROM qed.defects;
+INSERT INTO dqed.efforts SELECT * FROM qed.efforts;
+INSERT INTO dqed.lists SELECT * FROM qed.lists;
+INSERT INTO dqed.msgs SELECT * FROM qed.msgs;
+INSERT INTO dqed.roll SELECT * FROM qed.roll;
+INSERT INTO dqed.rollLogs SELECT * FROM qed.rollLogs;
+INSERT INTO dqed.servers SELECT * FROM qed.servers;
+INSERT INTO dqed.testmsgs SELECT * FROM qed.testmsgs;
+INSERT INTO dqed.times SELECT * FROM qed.times;
+INSERT INTO dqed.users SELECT * FROM qed.users;

@@ -1,0 +1,434 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{B2F60E57-2834-4C4D-9CBD-E3C166FD8E51}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "QED"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "QED"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Framework"
+                    Project = "{73EB0DB6-DFAF-436B-8674-7A56C73A0CF7}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "ICSharpCode.SharpZipLib"
+                    AssemblyName = "ICSharpCode.SharpZipLib"
+                    HintPath = "..\084SharpZipLib\ICSharpCode.SharpZipLib.dll"
+                />
+                <Reference
+                    Name = "VBIDE"
+                    Guid = "{0002E157-0000-0000-C000-000000000046}"
+                    VersionMajor = "5"
+                    VersionMinor = "3"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "Microsoft.Office.Core"
+                    Guid = "{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}"
+                    VersionMajor = "2"
+                    VersionMinor = "2"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Excel"
+                    Guid = "{00020813-0000-0000-C000-000000000046}"
+                    VersionMajor = "1"
+                    VersionMinor = "4"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "ByteFX.MySqlClient"
+                    AssemblyName = "ByteFX.MySqlClient"
+                    HintPath = "bin\Debug\ByteFX.MySqlClient.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReleaseNotes.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Business\Clients.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Clients.resx"
+                    DependentUpon = "Clients.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\Connections.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Connections.resx"
+                    DependentUpon = "Connections.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\Defects.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Defects.resx"
+                    DependentUpon = "Defects.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\EffortRollouts.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Efforts.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Efforts.resx"
+                    DependentUpon = "Efforts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\Groups.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Groups.resx"
+                    DependentUpon = "Groups.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\Hash.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Messages.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Messages.resx"
+                    DependentUpon = "Messages.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\QEDUsers.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\RollLog.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Rollout.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Servers.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Servers.resx"
+                    DependentUpon = "Servers.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Business\ShellCmd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\Times.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Business\CodePromotion\Roller.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\About.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\About.resx"
+                    DependentUpon = "About.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\ConMan.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\ConMan.resx"
+                    DependentUpon = "ConMan.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\CurrentTimerManager.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\CurrentTimerManager.resx"
+                    DependentUpon = "CurrentTimerManager.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\EffortData.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\EffortData.resx"
+                    DependentUpon = "EffortData.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\GenRoller.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\GenRoller.resx"
+                    DependentUpon = "GenRoller.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\InputModal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\InputModal.resx"
+                    DependentUpon = "InputModal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\InputModelLarge.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\InputModelLarge.resx"
+                    DependentUpon = "InputModelLarge.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\Login.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\Login.resx"
+                    DependentUpon = "Login.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\Main.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\Main.resx"
+                    DependentUpon = "Main.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\Reports.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\RolloutComplete.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\RolloutComplete.resx"
+                    DependentUpon = "RolloutComplete.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\RolloutLogSelector.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\RolloutLogSelector.resx"
+                    DependentUpon = "RolloutLogSelector.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\SendMail.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\SendMail.resx"
+                    DependentUpon = "SendMail.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UI\Time.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UI\Time.resx"
+                    DependentUpon = "Time.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Util\EmailValidator.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Util\FTP.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Util\IO.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Util\UI.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

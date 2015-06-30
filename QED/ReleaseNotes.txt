@@ -1,0 +1,31 @@
+QED Release Notes
+
+VER 1.4.1
+	Fixed bug in release email code. Debug flag was set which prevented emails from being sent.
+	
+VER 1.4.0
+	Forced user to send "Common code was rolled" email after they set rollout to "Rolled"
+	Added ticket description to RolloutTicketBreakdown
+	Created mnuItemsTruncatedRolloutTicketBreakdown
+	General roller clear fields after roll
+	
+VER 1.3.0
+	* Added	"Rollout Ticket Brackdown" report
+
+VER 1.2.0
+	* Added Branch/File field and Environment  field
+	
+	* Added "Rollouts and Branches" report and "Developer Rollout" report.
+	
+	* Allowed an effort to be assigned to a rollout as long as it hasn't been rolled and is approved (i.e. Effort's client and rollout client don't have to match).
+
+VER 1.1.0
+	* Changed the directory copy routine that is mostly used in code promotions so that it will "copy over" a directory rather than deleting 
+	the destination directory first and then copying the source dirctory to the destination directory's location. This make it possable to preserve 
+	files and subdirectories in the destination directory that may be missing from the source directory. This is closer to the algorithm that normal
+	OS directory copies use.
+
+	* Added General Roller
+
+	* Added Rollout completion walkthrough to get efforts closed and send out release emails.
+

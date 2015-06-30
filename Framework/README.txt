@@ -1,0 +1,38 @@
+JCSLA is a stripped down version of CSLA (Component-based Scalable Logical Architecture) (the J is for Jesse) with a couple of 
+additions added by me. CSLA was written by Rockford Lhotka.  Its intentions are to provide very commonly used functionality to 
+support typical object oriented CRUD based applications. Below is a description of each class.
+
+As you read each description please find a real business object like the ones in QED and examine the code as you read. The descriptions
+are quite terse. Each business object is very consistent and after close study you will see repeated patterns.
+
+BusinessBase
+	This is a base class that all business objects derive directly. A business object is a user defined object that loosely represents
+a row of data in database. Business objects that are derived from BusinessBase will automatically get functionality to allow it to determine 
+if the data it represents is new (not in the database yet), dirty (its data doesn't match the data it represents in the database because it 
+was changed or because the data is new) and marked for deletion. Based on these states the BusinessBase can Update the business object's data
+in the database (i.e. If the object is new, it will create a new record. If the object is dirty, it will update the data row). BusinessBase
+objects are almost always kept in BusnessCollectionBase objects
+
+BusinessCollectionBase
+	Classes that derive from this class are considered collection objects. They store collections of references to business object (see BusinessBase).
+The are loosely analogous to tables in a database as tables are collections of rows.
+
+BusinessRules
+	All BusinessBase and BusinessCollectionBase objects contain a property of type BusinessRules. Before an business object saves itself to the 
+database it checks the Count property of its BusinessRule property to determine if it is in a valid state to be saved. The BusinessRule property will
+determine if any properties violate business rules. If any do then the then a Rule object is added to the business rule collection. BusinessCollectionBase
+will contain a BusinessRule property that is a aggregation of all of its constituent BusinessBase object's BusinessRules.
+
+List
+	This List object is an addition of mine. It provides functionality that will maintain multiple a hierarchical lists. This has proven very useful to me and
+I recommend you study the code and its implementations.
+
+MySQLDBLayer 
+	The MySQLDBLayer was an attempt to separate the business logic from the database logic. It didn't fully succeed but it is still a usefully collections of
+methods.
+
+ReportAbtractor
+	This base class is quite useful for creating reports using business objects as opposed to raw SQL. It can output reports in text, Excel. Additional
+output types (HTML, CSV, Word) can be implemented quite easily as needed. Note: this class stores data in an object oriented matrix (cell, row , and column objects) and
+is a bit intricate. You may encounter bugs you will need to fix unless you use it in ways it has already been used before.
+
